@@ -5,15 +5,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Kodlama.ioProject2.Entites.Concrete
+namespace Kodlama.ioProject2.Entites.DTOs
 {
-    public class Course :IEntity
+    public class CourseDetailDto :IDto
     {
         public int CourseId { get; set; }
+        public string CourseName { get; set; }
+        public int CoursePrice { get; set; }
         public int CategoryId { get; set; }
         public int InstructorId { get; set; }
-        public string CourseName { get; set; }
-        public string Description { get; set; }
-        public int CoursePrice { get; set; }
+
     }
 }
